@@ -5,9 +5,47 @@ body{
 }
 
 header {
+  position: sticky;
+  top: 0;
   width: auto;
   height: 50px;
   background-color: #E599CB;
+  z-index: 100;
+}
+
+#header-menu-button {
+  position: absolute;
+  background-color: white;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+#header-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: -150px;
+  width: 100%;
+  height: auto;
+  font-size: 2em;
+  line-height: 39px;
+  z-index: 3;
+}
+#header-menu * {
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  background-color: grey;
+}
+
+#header-logo {
+  position: absolute;
+  left: 50px;
+  font-size: 3em;
+  color: #8F005D;
+  line-height: 50px;
 }
 
 main {
@@ -19,18 +57,17 @@ main {
   display: block;
   background-color: #FFFDAB;
   width: auto;
-  height: calc(100vh - 50px);
-
+  height: calc(100% - 50px);
 }
 
 #search-block {
   position: relative;
   display: flex;
   background-color: #BD96DA;
-  width: calc(100vw - 60px);
-  height: calc(100vh - 50px - 40vh);
-  top: calc(20vh);
-  bottom: calc(20vh + 50px);
+  width: calc(100% - 60px);
+  height: calc(100% - 50px - 40%);
+  top: calc(20%);
+  bottom: calc(20% + 50px);
   left: 30px;
   right: 30px;
 }
@@ -42,7 +79,7 @@ footer {
 		'desc2 desc2'
     'info contacts';
   grid-gap: 20px;
-  grid-template-columns: auto 300px;
+  grid-template-columns: auto auto;
   background-color: #BCEF3F;
   width: auto;
   padding: 10px;
@@ -63,10 +100,14 @@ footer * {
 }
 
 #footer-info{
+  margin-top: auto;
+  margin-bottom: auto;
   grid-area: info;
 }
 
 #footer-contacts{
+  margin-top: auto;
+  margin-bottom: auto;
   text-align: left;
   grid-area: contacts;
 }
