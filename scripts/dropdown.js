@@ -16,11 +16,11 @@ function mouseOver() {
 
 	document.getElementById("inv_val").innerHTML = "1";
 
-	var start = Date.now(); // время начала
+	var start = 0; // начало, 0 итераций
 	var timer = setInterval(function() {
-		var timePassed = Date.now() - start; // количество пройденного времени
-		// если оно больше чем нужно - присваивается новый статус
-		if (timePassed >= 210) {
+		start+=1; // +1 итерация
+		// если больше чем нужно - присваивается новый статус
+		if (start >= 21) {
 			if(step == 10){
 				document.getElementById("inv_val").innerHTML = "2";
 			}
