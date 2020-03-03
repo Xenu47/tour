@@ -26,7 +26,7 @@ header {
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: -150px;
+  top: -100%;
   width: 100%;
   height: auto;
   font-size: 2em;
@@ -38,6 +38,7 @@ header {
   box-sizing: border-box;
   color: #8F005D;
   background-color: #F2C3E2;
+  text-decoration: none;
 }
 #header-menu div:nth-child(1n+0):hover {
   background-color: #E599CB;
@@ -55,6 +56,10 @@ main {
   min-height: 300px;
   background-color: #E1F8A6;
   margin: 10px;
+}
+
+.inv{
+  display: none;
 }
 
 #search-area {
