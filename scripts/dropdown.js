@@ -42,5 +42,5 @@ function mouseOver() {
 
 function dropdown(i, element_count, element_height, header_height){
 	document.querySelector("#header-menu").setAttribute("style","top:"+i+"px");
-	document.querySelector("#search-area").setAttribute("style","margin-top:"+(i + element_count*element_height - header_height)+"px");
+	document.querySelector("main").setAttribute("style","margin-top:"+(i + element_count*element_height - header_height + 10)+"px");
 }
