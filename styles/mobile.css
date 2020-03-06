@@ -40,7 +40,7 @@ header {
   background-color: #F2C3E2;
   text-decoration: none;
 }
-#header-menu div:nth-child(1n+0):hover {
+#header-menu *:nth-child(1n+0):hover {
   background-color: #E599CB;
 }
 
@@ -50,6 +50,10 @@ header {
   font-size: 3em;
   color: #8F005D;
   line-height: 50px;
+}
+#header-logo a img {
+  width: auto;
+  height: 50px;
 }
 
 main {

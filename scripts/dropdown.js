@@ -1,5 +1,6 @@
 function mouseOver() {
 	// статус "в движении", тогда при повторном нажатии он не прекратит работу
+	var body = document.querySelector(body);
 	var header_menu = document.querySelector('#header-menu');
 	var element_count = header_menu.childElementCount;
 	var element_height = header_menu.querySelector('#header-menu > a').clientHeight;
