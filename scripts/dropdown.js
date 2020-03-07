@@ -11,13 +11,13 @@ function mouseOver() {
 	}
 	// статус "закрыт", задатся начальную позицию и скорость
 	if(document.getElementById("inv_val").innerHTML == "0"){
-		var i = menu_height*-1 + header_height;
-		var step = menu_height/20;
+		var i = 0;
+		var step = 5 ;
 	}
 	// статус "открыт", задатся начальную позицию и скорость
 	if(document.getElementById("inv_val").innerHTML == "2"){
-		var i = header_height;
-		var step = menu_height/-20;
+		var i = 70;
+		var step = -5;
 	}
 
 	document.getElementById("inv_val").innerHTML = "1";
@@ -26,22 +26,26 @@ function mouseOver() {
 	var timer = setInterval(function() {
 		start+=1; // +1 итерация
 		// если больше чем нужно - присваивается новый статус
-		if (start >= 21) {
-			if(step == menu_height/20){
+		if (start >= 15) {
+			if(step == 5){
 				document.getElementById("inv_val").innerHTML = "2";
 			}
 			else{
 				document.getElementById("inv_val").innerHTML = "0";
+				document.querySelector("#brightness_block").style.display = 'none';
+				document.querySelector("#header-menu").style.display = 'none';
 			}
 			clearInterval(timer);
 			return;
 		}
 		i = i + step; // новый отступ от верха
-		dropdown(i, element_count, element_height, header_height); // применяется отсуп
+		dropdown(i); // применяется отсуп
 	}, 10);
 }
 
-function dropdown(i, element_count, element_height, header_height){
-	document.querySelector("#header-menu").setAttribute("style","top:"+i+"px");
-	document.querySelector("main").setAttribute("style","margin-top:"+(i + element_count*element_height - header_height + 10)+"px");
+function dropdown(i){
+	document.querySelector("#header-menu").style.display = 'flex'; 
+	document.querySelector("body").style.transform = "translateX(-"+(i)+"%)";
+	document.querySelector("#brightness_block").style.opacity = (i/100)
+	document.querySelector("#brightness_block").style.display = 'block';
 }

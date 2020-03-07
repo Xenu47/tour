@@ -1,3 +1,9 @@
+html{
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
 body{
   margin: 0;
   font-family: arial;
@@ -22,14 +28,26 @@ header {
   height: 40px;
 }
 
-#header-menu {
+#brightness_block{
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  top: -100%;
+  top:0;
+  background-color: black;
+  opacity: 0.7;
+  height: 100%;
   width: 100%;
-  height: auto;
-  font-size: 2em;
+  z-index: 101;
+}
+
+#header-menu {
+  position: absolute;
+  top: 0px;
+  display: none;
+  flex-direction: column;
+  left: 100%;
+  width: 70%;
+  height: 100vh;
+  background-color: #F2C3E2;
+  font-size: 1.5em;
   line-height: 40px;
   z-index: 99;
 }
@@ -40,26 +58,28 @@ header {
   background-color: #F2C3E2;
   text-decoration: none;
 }
-#header-menu *:nth-child(1n+0):hover {
-  background-color: #E599CB;
-}
 
 #header-logo {
-  position: absolute;
   left: 5px;
   font-size: 3em;
-  color: #8F005D;
   line-height: 50px;
 }
 #header-logo a img {
-  width: auto;
-  height: 50px;
+  padding-top: 5px;
+  width: 60vw;
+  height: auto;
+}
+#header-logo:not(img) * {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #8F005D;
 }
 
 main {
   min-height: 300px;
   background-color: #E1F8A6;
   margin: 10px;
+  height: 2000px;
 }
 
 .inv{
