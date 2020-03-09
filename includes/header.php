@@ -7,6 +7,7 @@
 		</a>
 	</div>
 
+	<div style="display:none;" id="brightness_block" onclick="mouseOver()"></div>
 	<div id="header-menu">	
 		<div id="header-logo">
 			<a href="/">
@@ -26,7 +27,6 @@
 		<div id="">О нас</div>
 	</div>
 
-	<div style="display:none;" id="brightness_block" onclick="mouseOver()"></div>
 </header>
 
 

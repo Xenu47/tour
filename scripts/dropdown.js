@@ -44,8 +44,8 @@ function mouseOver() {
 }
 
 function dropdown(i){
-	document.querySelector("#header-menu").style.display = 'flex'; 
-	document.querySelector("body").style.transform = "translateX(-"+(i)+"%)";
+	document.querySelector("#header-menu").style.display = 'flex';
+	document.querySelector("#header-menu").style.left = 100-i+"%";
 	document.querySelector("#brightness_block").style.opacity = (i/100)
-	document.querySelector("#brightness_block").style.display = 'block';
+	document.querySelector("#brightness_block").style.display = 'flex';
 }
