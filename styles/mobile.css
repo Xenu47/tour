@@ -14,13 +14,12 @@ header {
   width: 100%;
   height: 50px;
   z-index: 90;
-  background-color: #E599CB;
 }
 #header-logo {
-  width: auto;
   left: 5px;
   font-size: 3em;
   line-height: 50px;
+  background-color: #E599CB;
 }
 #header-logo a img {
   padding-top: 5px;
@@ -49,12 +48,14 @@ menu {
   top: 50px;
   left: 0;
   width: 0;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
   transition: 0.5s;
   font-size: 30px;
+  line-height: 40px;
   background-color: #F2C3E2;
   box-shadow: inset -5px -5px 10px grey;
+  box-sizing: border-box;
   z-index: 88;
 }
 menu a {
