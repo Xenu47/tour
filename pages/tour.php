@@ -9,11 +9,12 @@
 		<link rel="stylesheet" media="screen and (min-device-width: 768px)" href="../styles/pc.css" />
 		<link rel="stylesheet" media="screen and (max-device-width: 768px)" href="../styles/mobile.css" />
 		-->
-		<script type="text/javascript" src="../scripts/dropdown.js"></script>
+		<script type="text/javascript" src="../scripts/menu.js"></script>
 		<?php include_once ("includes/meta.php");?>
 	</head>
 	<body>
 		<?php include_once ("includes/header.php");?>
+		<?php include_once ("includes/menu.php");?>
 
 		<main>
 			<?php include_once ("includes/tour_search.php");?>
