@@ -1,3 +1,4 @@
+
 <menu>
 	<a href="/tour" class="link">Поиск Туров</a>
 	<a href="/sightseeing" class="link">Экскурсии</a>
@@ -22,5 +23,5 @@
 	</div>
 	<div id="bonus_height"></div>
 </menu>
-
+<div id="background"></div>
 <div id="brightness_block" onclick="closeMenu()"></div>

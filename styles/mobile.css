@@ -1,7 +1,12 @@
 html{
+  background-image: url(../images/bg.jpeg);
+  background-position: center;
 }
 
 body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   overflow-x: hidden;
   margin: 0;
   font-family: arial;
@@ -10,21 +15,24 @@ body{
 
 header {
   position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   top: 0;
-  width: 100%;
-  height: 50px;
+  width: auto;
+  height: 60px;
   z-index: 90;
+  background-image: url(../images/head.jpg);
+  background-size: cover;
 }
 #header-logo {
-  left: 5px;
   font-size: 3em;
   line-height: 50px;
-  background-color: #E599CB;
 }
 #header-logo a img {
   padding-top: 5px;
-  width: 60vw;
-  height: auto;
+  width: auto;
+  height: 50px;
 }
 #header-logo:not(img) * {
   padding-left: 5px;
@@ -32,12 +40,29 @@ header {
   color: #8F005D;
 }
 #header-menu-button {
-  position: absolute;
-  background-color: white;
-  top: 5px;
-  right: 5px;
-  width: 40px;
+  position: relative;
+  display: inline-block;
+  top: 10px;
+  left: 10px;
+  width: auto;
   height: 40px;
+  transition: 0.5s;
+}
+.bar1, .bar2, .bar3 {
+  width: 40px;
+  height: 6px;
+  background-color: white;
+  margin: 6px 5px;
+  transition: 0.5s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-10px, 6px);
+  transform: rotate(-45deg) translate(-8px, 7px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-9px, -9px);
 }
 
 menu {
@@ -52,8 +77,8 @@ menu {
   overflow-x: hidden;
   transition: 0.5s;
   font-size: 30px;
-  line-height: 40px;
-  background-color: #F2C3E2;
+  line-height: 45px;
+  background-color: #f0efff;
   box-shadow: inset -5px -5px 10px grey;
   box-sizing: border-box;
   z-index: 88;
@@ -66,18 +91,18 @@ menu a {
   margin-right: 10px;
   text-align: left;
   box-sizing: border-box;
-  color: #8F005D;
+  color: #5b84c2;
   text-decoration: none;
 }
 menu a:hover {
-  color: #8F005D;
+  color: #5b84c2;
   text-decoration: none;
 }
 menu > a:nth-child(1n+1) {
-  border-bottom: 1px solid #E299C8;
+  border-bottom: 1px solid #BCB8FF;
 }
 menu > div > a:nth-child(1n+2) {
-  border-top: 1px solid #F4C5E3;
+  border-top: 1px solid #f0efff;
 }
 menu .inline-menu-name:before{
   content:url('../images/triangle.svg');
@@ -108,13 +133,14 @@ menu .inline-menu{
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #E599CB;
+  background-color: #BCB8FF;
   width: auto;
   height: auto;
   transition: 0.5s;
   overflow: hidden;
 }
 menu .inline-menu a{
+  color: #FFFFFF;
   width: calc(70vw - 40px);
 }
 menu #bonus_height{
@@ -128,6 +154,7 @@ menu #bonus_height{
   pointer-events: none;
   position: fixed;
   top: 0;
+  right: 0;
   background-color: black;
   opacity: 0;
   height: 100vh;
@@ -137,10 +164,44 @@ menu #bonus_height{
 }
 
 main {
-  min-height: 300px;
-  background-color: #E1F8A6;
+  min-height: 700px;
+  background-color: #FFFFFF;
   margin: 10px;
-  height: 2000px;
+}
+
+content {
+  display: block;
+  padding: 5px;
+  height: auto;
+  width: auto;
+}
+
+.collapsable {
+  font-size: 20px;
+  line-height: 23px;
+  display: block;
+  max-height: 5000px;
+  width: auto;
+  overflow-y: hidden;
+  transition: max-height 0.5s ease-out;
+}
+.collapsable.less {
+  max-height: 92px;
+  overflow-y: hidden;
+  transition: max-height 0.5s ease-in;
+}
+.showmore {
+  margin: auto;
+  display: block;
+  content:url('../images/expand.svg');
+  align-content: center;
+  height: 50px;
+  width: 100px;
+  transition: 0.5s;
+}
+.showmore.less {
+  transform: rotate(180deg); 
+  transition: 0.5s;
 }
 
 .inv{
@@ -174,19 +235,29 @@ footer {
     'info contacts';
   grid-gap: 20px;
   grid-template-columns: auto auto;
-  background-color: #BCEF3F;
+  background-color: #037fcd;
   width: auto;
   padding: 10px;
 }
 
 footer * {
-  background-color: #E1F8A6;
+  background-color: #037fcd;
+  border: 1px solid white;
 }
 
 #footer-desc-1{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
   min-height: 100px;
-  text-align: center;
+  text-align: right;
   grid-area: desc1;
+  font-size: 20px;
+  color: #f0efff;
+}
+#footer-desc-1 a{
+  color: #fff600;
+  text-decoration: none;
 }
 
 #footer-desc-2{
