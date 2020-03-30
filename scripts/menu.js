@@ -1,4 +1,5 @@
 var heightDict = {};
+var colHeightDict = {};
 
 window.onload = function(){
 	let x = document.getElementsByClassName("inline-menu");
@@ -6,6 +7,14 @@ window.onload = function(){
 	  	heightDict[x[i].id] = x[i].offsetHeight;
 	  	x[i].style.height = 0;
 	}
+	console.log(heightDict);
+	let y = document.getElementsByClassName("collapsable");
+	for (let i = 0; i < y.length; i++) {
+	  	y[i].setAttribute("id", i);
+	  	colHeightDict[y[i].id] = y[i].offsetHeight;
+	  	y[i].classList.toggle("less");
+	}
+	console.log(colHeightDict);
 }
 
 function openMenu(){
@@ -40,12 +49,14 @@ function closeInline(ele){
 }
 
 function showMore(ele){
-	ele.previousSibling.classList.toggle("less");
+	let id = ele.previousSibling.id;
+	ele.previousSibling.style.height = colHeightDict[id];
 	ele.classList.toggle("less");
 	ele.setAttribute("onclick", "showLess(this)");
 }
 function showLess(ele){
-	ele.previousSibling.classList.toggle("less");
+	ele.previousSibling.style.height = "92px";
+	ele.previousSibling.scrollIntoView();
 	ele.classList.toggle("less");
 	ele.setAttribute("onclick", "showMore(this)");
 }

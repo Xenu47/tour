@@ -22,8 +22,7 @@
 -->
 		<main>
 			<?php include_once ("includes/sightseeing_tours.php");?>
+			<?php include_once ("includes/footer.php");?>
 		</main>
-
-		<?php include_once ("includes/footer.php");?>
 	</body>
 </html>

@@ -1,6 +1,7 @@
 html{
   background-image: url(../images/bg.jpeg);
-  background-position: center;
+  background-repeat: repeat;
+  background-position: center top;
 }
 
 body{
@@ -15,13 +16,15 @@ body{
 
 header {
   position: sticky;
+  top: 0;
+  z-index: 90;
+}
+#header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  top: 0;
   width: auto;
   height: 60px;
-  z-index: 90;
   background-image: url(../images/head.jpg);
   background-size: cover;
 }
@@ -164,9 +167,13 @@ menu #bonus_height{
 }
 
 main {
-  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  height: calc(100vh - 60px);
   background-color: #FFFFFF;
-  margin: 10px;
+  margin: 0px 10px;
 }
 
 content {
@@ -180,15 +187,15 @@ content {
   font-size: 20px;
   line-height: 23px;
   display: block;
-  max-height: 5000px;
+  height: auto;
   width: auto;
   overflow-y: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: 0.5s ease-in;
 }
 .collapsable.less {
-  max-height: 92px;
+  height: 92px;
   overflow-y: hidden;
-  transition: max-height 0.5s ease-in;
+  transition: 0.5s ease-out;
 }
 .showmore {
   margin: auto;
