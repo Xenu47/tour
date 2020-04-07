@@ -1,7 +1,5 @@
 html{
-  background-image: url(../images/bg.jpeg);
-  background-repeat: repeat;
-  background-position: center top;
+  height: 100%;
 }
 
 body{
@@ -10,13 +8,12 @@ body{
   justify-content: space-between;
   overflow-x: hidden;
   margin: 0;
+  height: 100%;
   font-family: arial;
   font-size: 1em;
 }
 
 header {
-  position: sticky;
-  top: 0;
   z-index: 90;
 }
 #header {
@@ -70,19 +67,20 @@ header {
 
 menu {
   flex-direction: column;
-  position: fixed;
-  margin-top: 0;
+  display: block;
+  position: absolute;
+  margin: 0;
   padding: 10 0;
-  top: 50px;
+  top: 55px;
+  bottom: 0;
   left: 0;
   width: 0;
-  height: 100%;
-  overflow-x: hidden;
+  height: auto;
+  overflow: hidden;
   transition: 0.5s;
-  font-size: 30px;
+  font-size: 2em;
   line-height: 45px;
   background-color: #f0efff;
-  box-shadow: inset -5px -5px 10px grey;
   box-sizing: border-box;
   z-index: 88;
 }
@@ -173,18 +171,17 @@ main {
   overflow: auto;
   height: calc(100vh - 60px);
   background-color: #FFFFFF;
-  margin: 0px 10px;
 }
 
 content {
   display: block;
-  padding: 5px;
+  padding: 15px;
   height: auto;
   width: auto;
 }
 
 .collapsable {
-  font-size: 20px;
+  font-size: 1.3em;
   line-height: 23px;
   display: block;
   height: auto;
@@ -234,12 +231,39 @@ content {
   right: 30px;
 }
 
+.container {
+  display: block;
+}
+.container form{
+  margin: 0 10px;
+}
+#feedback input[type=text], textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: inherit;
+  margin: 6px 0;
+  resize: vertical;
+}
+#feedback input[type=submit] {
+  width: 100%;
+  background-image: url(../images/bg.jpeg);
+  color: white;
+  font-size: 2em;
+  padding: 12px 20px;
+  border: none;
+  margin: 10px 0 20px 0;
+  cursor: pointer;
+}
+
 footer {
   display: grid;
 	grid-template-areas:
-		'desc1 desc1'
-		'desc2 desc2'
-    'info contacts';
+		'contacts contacts'
+    'menu menu';
   grid-gap: 20px;
   grid-template-columns: auto auto;
   background-color: #037fcd;
@@ -249,41 +273,30 @@ footer {
 
 footer * {
   background-color: #037fcd;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
 
-#footer-desc-1{
-  display: flex;
+#footer-contacts{
+  display: block;
   flex-direction: column;
-  text-align: right;
-  min-height: 100px;
-  text-align: right;
-  grid-area: desc1;
-  font-size: 20px;
+  text-align: left;
+  grid-area: contacts;
+  font-size: 1em;
   color: #f0efff;
 }
-#footer-desc-1 a{
+#footer-contacts a{
   color: #fff600;
   text-decoration: none;
 }
 
-#footer-desc-2{
-  min-height: 100px;
-  text-align: center;
-  grid-area: desc2;
+#footer-menu{
+  display: block;
+  width: auto;
+  grid-area: menu;
+  font-size: 1.1em;
+  color: #f0efff;
 }
-
-#footer-info{
-  min-height: 100px;
-  margin-top: auto;
-  margin-bottom: auto;
-  grid-area: info;
-}
-
-#footer-contacts{
-  min-height: 100px;
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: left;
-  grid-area: contacts;
+#footer-menu a{
+  color: #fff600;
+  text-decoration: none;
 }

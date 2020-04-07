@@ -1,13 +1,19 @@
+var body = document.body;
+var html = document.documentElement;
+var pageHeight = 0; 
 var heightDict = {};
 var colHeightDict = {};
 
 window.onload = function(){
+	getPageHeight();
+	
 	let x = document.getElementsByClassName("inline-menu");
 	for (let i = 0; i < x.length; i++) {
 	  	heightDict[x[i].id] = x[i].offsetHeight;
 	  	x[i].style.height = 0;
 	}
 	console.log(heightDict);
+
 	let y = document.getElementsByClassName("collapsable");
 	for (let i = 0; i < y.length; i++) {
 	  	y[i].setAttribute("id", i);
@@ -17,13 +23,23 @@ window.onload = function(){
 	console.log(colHeightDict);
 }
 
+function getPageHeight() {
+	body = document.body;
+	html = document.documentElement;
+	pageHeight = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+	console.log(pageHeight);
+}
+
 function openMenu(){
+	getPageHeight();
 	document.querySelector("#header-menu-button").setAttribute("onclick", "closeMenu()");
 	document.querySelector("menu").style.width = "70vw";
 	document.querySelector("#brightness_block").style.opacity = "0.3";
 	document.querySelector("#brightness_block").style.width = "30vw";
 	document.querySelector("#brightness_block").style.pointerEvents = "all";
 	document.querySelector("#header-menu-button").classList.toggle("change");
+	document.querySelector("menu").style.height = pageHeight - 55;
 }
 function closeMenu(){
 	document.querySelector("#header-menu-button").setAttribute("onclick", "openMenu()");
