@@ -17,6 +17,14 @@
 		<?php include_once ("includes/menu.php");?>
 
 		<content>
+			<?php include_once ("includes/tour_search.php");?>
+			<hr>
+			<?php include_once ("includes/sightseeing_tours.php");?>
+			<hr>
+			<?php include_once ("includes/ittour.php");?>
+			<hr>
+			<?php include_once ("includes/feedback.php");?>
+			<hr>
 			<div class="collapsable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare aliquam enim et ornare. Nunc et ex varius, gravida tortor a, dignissim mi. Fusce ac pulvinar tellus. Nam at ultrices quam. In hac habitasse platea dictumst. Sed posuere mattis nulla, nec consectetur ligula interdum a. Nam ultrices ligula at congue placerat. Mauris eleifend viverra lacus, vel aliquam odio sollicitudin quis. Curabitur sit amet tellus quis eros rutrum commodo. Etiam sem felis, venenatis nec facilisis eget, hendrerit sed arcu. Morbi eu felis sit amet metus mollis accumsan eu ut dui. Morbi non risus orci. Donec tortor neque, accumsan eget suscipit nec, mollis ut quam.
 
 Donec non est erat. Donec vulputate euismod sapien, vitae finibus elit rhoncus a. Nullam porttitor nisi turpis, sed sollicitudin diam sodales ornare. Integer laoreet, ante vel consectetur condimentum, nisi sapien scelerisque dui, blandit fermentum neque ante sit amet leo. Morbi dictum, tortor venenatis tempus feugiat, neque nulla hendrerit nisi, non vestibulum ligula nunc vel lectus. Nulla ultrices turpis a congue maximus. Quisque maximus luctus eleifend. Nunc justo tortor, imperdiet at pretium in, placerat non neque. Donec lobortis quam lacus, ut pharetra arcu imperdiet in. Nam vestibulum dolor sed tincidunt molestie. Pellentesque eu dui ac purus gravida pharetra. Nam egestas enim faucibus accumsan facilisis. Praesent viverra tempor nisl, ac finibus velit congue sed. Etiam quis sapien faucibus massa accumsan scelerisque sit amet scelerisque quam.
@@ -27,7 +35,6 @@ Nunc maximus ultrices dui quis vulputate. Sed sollicitudin, urna non ullamcorper
 
 Nulla congue massa massa, ut auctor nunc eleifend non. Cras dignissim leo ac lorem convallis bibendum. Morbi vel velit et libero varius condimentum nec id neque. Nulla facilisi. Phasellus laoreet risus eget velit vehicula, sed placerat ipsum malesuada. Aliquam tincidunt hendrerit diam, nec malesuada odio. Nullam imperdiet magna eget metus fermentum, nec fringilla felis elementum.</div><div class="showmore" onclick="showMore(this)"></div>
 		</content>
-		<?php include_once ("includes/feedback.php");?>
 		<?php include_once ("includes/footer.php");?>
 	</body>
 </html>
