@@ -1,5 +1,4 @@
 html{
-  height: 100%;
 }
 
 body{
@@ -8,7 +7,6 @@ body{
   justify-content: space-between;
   overflow-x: hidden;
   margin: 0;
-  height: 100%;
   font-family: arial;
   font-size: 1em;
 }
@@ -66,12 +64,11 @@ header {
 }
 
 menu {
-  flex-direction: column;
   display: block;
   position: absolute;
   margin: 0;
   padding: 10 0;
-  top: 55px;
+  top: 60px;
   bottom: 0;
   left: 0;
   width: 0;
@@ -301,7 +298,46 @@ footer * {
   text-decoration: none;
 }
 
-
 .new_os_high{
   z-index: 91 !important;
 }
+#showcase_module{
+  width: 100%;
+  margin: 0 auto !important;
+  display: none !important;
+}
+
+/*
+@media only screen and (min-width: 720px){
+
+  #showcase_module{
+    display: block !important;
+  }
+  menu {
+    flex-direction: row;
+    display: block;
+    position: relative;
+    top: 0;
+    margin: 0;
+    width: 0;
+    height: auto;
+    z-index: 1;
+  }
+  menu a {
+    width: auto;
+    text-align: center;
+  }
+  menu .inline-menu-name:before{
+    left: 0;
+  }
+  menu .active:before{
+    left: 0;
+  }  
+  menu .inline-menu{
+    height: auto;
+  }
+  menu .inline-menu a{
+    width: auto;
+  }
+}
+*/

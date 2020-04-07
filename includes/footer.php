@@ -4,8 +4,8 @@
 		<div style="/*border: 1px solid white;*/">
 			<div><a href="tel:+38 044 383 15 74">+38 044 383 15 74</a></div>
 			<div><a href="tel:+38 099 234 20 02">+38 099 234 20 02</a> - Водафон </div>
-			<div><a href="tel:+38 067 507 58 33">+38 067 507 58 33</a> - Киевстар Viber, Telegram </div>
-			<div><a href="tel:+38 063 875 75 10">+38 063 875 75 10</a> - Лайф Viber </div>
+			<div><a href="tel:+38 067 507 58 33">+38 067 507 58 33</a> - Киевстар <a href="viber://chat?number=+380675075833">Viber</a>, <a href="http://t.me/s_tourmix">Telegram</a> </div>
+			<div><a href="tel:+38 063 875 75 10">+38 063 875 75 10</a> - Лайф <a href="viber://chat?number=+380638757510">Viber</a> </div>
 		</div>
 	</div>
 	<div id="footer-menu">

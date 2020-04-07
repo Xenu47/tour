@@ -1,5 +1,6 @@
 var body = document.body;
 var html = document.documentElement;
+var screenW = screen.width;
 var pageHeight = 0; 
 var heightDict = {};
 var colHeightDict = {};
@@ -21,16 +22,18 @@ window.onload = function(){
 	  	y[i].classList.toggle("less");
 	}
 	console.log(colHeightDict);
-
-	newOsToggle(0);
+	/*if (screenW < 720){*/
+		newOsToggle(0);
+	/*}*/
 }
 
 function getPageHeight() {
 	body = document.body;
 	html = document.documentElement;
+	screenW = screen.width;
 	pageHeight = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-	console.log(pageHeight);
+	console.log("page h:", pageHeight, "\nscrren w:", screenW);
 }
 
 function newOsToggle(timeout){
@@ -43,23 +46,38 @@ function newOsToggle(timeout){
 
 function openMenu(){
 	getPageHeight();
+
 	document.querySelector("#header-menu-button").setAttribute("onclick", "closeMenu()");
-	document.querySelector("menu").style.width = "70vw";
-	document.querySelector("#brightness_block").style.opacity = "0.3";
-	document.querySelector("#brightness_block").style.width = "30vw";
-	document.querySelector("#brightness_block").style.pointerEvents = "all";
 	document.querySelector("#header-menu-button").classList.toggle("change");
-	document.querySelector("menu").style.height = pageHeight - 55;
-	newOsToggle(0);
+	/*if (screenW < 720){*/
+		document.querySelector("menu").style.width = "70vw";
+		document.querySelector("#brightness_block").style.opacity = "0.3";
+		document.querySelector("#brightness_block").style.width = "30vw";
+		document.querySelector("#brightness_block").style.pointerEvents = "all";
+		document.querySelector("menu").style.height = pageHeight - 55;
+		newOsToggle(0);
+	/*}
+	if (screenW >= 720){
+		document.querySelector("menu").style.width = "auto";
+		document.querySelector("menu").style.height = "auto";
+		newOsToggle(0);
+	}*/
 }
 function closeMenu(){
 	document.querySelector("#header-menu-button").setAttribute("onclick", "openMenu()");
-	document.querySelector("menu").style.width = "0";
-	document.querySelector("#brightness_block").style.opacity = "0";
-	document.querySelector("#brightness_block").style.width = "100vw";
-	document.querySelector("#brightness_block").style.pointerEvents = "none";
 	document.querySelector("#header-menu-button").classList.toggle("change");
-	newOsToggle(500);
+	/*if (screenW < 720){*/
+		document.querySelector("menu").style.width = "0";
+		document.querySelector("#brightness_block").style.opacity = "0";
+		document.querySelector("#brightness_block").style.width = "100vw";
+		document.querySelector("#brightness_block").style.pointerEvents = "none";
+		newOsToggle(500);
+	/*}
+	if (screenW >= 720){
+		document.querySelector("menu").style.width = "auto";
+		document.querySelector("menu").style.height = "0";
+		newOsToggle(0);
+	}*/
 }
 
 function openInline(ele){
