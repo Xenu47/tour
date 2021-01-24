@@ -1,15 +1,8 @@
 <!DOCTYPE html5>
 <html>
 	<head>
-		<title>Tourmix</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="../styles/mobile.css" />
-		<!--
-		<link rel="stylesheet" media="screen and (min-device-width: 768px)" href="../styles/pc.css" />
-		<link rel="stylesheet" media="screen and (max-device-width: 768px)" href="../styles/mobile.css" />
-		-->
-		<script type="text/javascript" src="../scripts/menu.js"></script>
+		<title>Tourmix - Ваш турагент</title>
+		
 		<?php include_once ("includes/meta.php");?>
 	</head>
 	<body>
@@ -21,20 +14,31 @@
 			<hr>
 			<?php include_once ("includes/sightseeing_tours.php");?>
 			<hr>
-			<center>
-				<?php include_once ("includes/ittour.php");?>
-			</center>
 			<?php include_once ("includes/feedback.php");?>
 			<hr>
-			<div class="collapsable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare aliquam enim et ornare. Nunc et ex varius, gravida tortor a, dignissim mi. Fusce ac pulvinar tellus. Nam at ultrices quam. In hac habitasse platea dictumst. Sed posuere mattis nulla, nec consectetur ligula interdum a. Nam ultrices ligula at congue placerat. Mauris eleifend viverra lacus, vel aliquam odio sollicitudin quis. Curabitur sit amet tellus quis eros rutrum commodo. Etiam sem felis, venenatis nec facilisis eget, hendrerit sed arcu. Morbi eu felis sit amet metus mollis accumsan eu ut dui. Morbi non risus orci. Donec tortor neque, accumsan eget suscipit nec, mollis ut quam.<br>
+			<div class="collapsable">
+<h1>Туры в Египет, туры в Турцию, туры ...</h1>
 
-Donec non est erat. Donec vulputate euismod sapien, vitae finibus elit rhoncus a. Nullam porttitor nisi turpis, sed sollicitudin diam sodales ornare. Integer laoreet, ante vel consectetur condimentum, nisi sapien scelerisque dui, blandit fermentum neque ante sit amet leo. Morbi dictum, tortor venenatis tempus feugiat, neque nulla hendrerit nisi, non vestibulum ligula nunc vel lectus. Nulla ultrices turpis a congue maximus. Quisque maximus luctus eleifend. Nunc justo tortor, imperdiet at pretium in, placerat non neque. Donec lobortis quam lacus, ut pharetra arcu imperdiet in. Nam vestibulum dolor sed tincidunt molestie. Pellentesque eu dui ac purus gravida pharetra. Nam egestas enim faucibus accumsan facilisis. Praesent viverra tempor nisl, ac finibus velit congue sed. Etiam quis sapien faucibus massa accumsan scelerisque sit amet scelerisque quam.<br>
+<h2>Отдых в Египте, в Турции, отдых где угодно...</h2>
 
-Maecenas sollicitudin commodo magna, id viverra lacus rhoncus vitae. Morbi vulputate dictum lacus nec finibus. Proin porta metus vehicula tincidunt placerat. Mauris at nisi eleifend, consectetur massa quis, molestie sapien. Pellentesque sed vestibulum quam, aliquet vulputate ipsum. Quisque varius venenatis lectus eu faucibus. Pellentesque ultricies est vitae vestibulum ullamcorper. Integer varius, risus nec consectetur condimentum, metus urna faucibus mauris, ut eleifend augue sapien at nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce at maximus tellus. Etiam ac arcu mollis, tempor neque sed, congue risus. Curabitur in ligula libero. Nulla sodales commodo nulla eget bibendum. Mauris mattis ex fringilla fermentum faucibus.<br>
 
-Nunc maximus ultrices dui quis vulputate. Sed sollicitudin, urna non ullamcorper posuere, tortor libero varius nunc, eget ultricies arcu nisl a justo. Fusce pharetra lectus in leo convallis, eu molestie ex placerat. Maecenas lobortis, ligula a commodo dapibus, sem orci dapibus lectus, a interdum massa est nec quam. Aliquam in viverra dolor. Nulla euismod sodales nibh vel tempor. Sed vestibulum dui et nisl bibendum feugiat.<br>
+<p style="text-align: justify">
+<strong>Отдых в Египте</strong> - это уникальная возможность насладиться экзотическими видами на пустыню, многочисленным подводным миром и богатой исторической культурой. <strong>Интернет ТурАгентство "TourMIX.com.ua"</strong> поможет Вам подобрать для Вас туры и путевки, которые в полной мере воплотить все ваши желания, на самые популярные курорты Египта, страна которая востребована туристами многих стран. <strong>Отдых в Египте</strong> (можно поставить в один ряд с отдыхом в Турции и отдыхом в ОАЭ) - это то что дает силу и энергию на весь последующий год. В Интернет ТурАгентстве "TourMIX.com.ua" Вы сможете приобрести <strong>горящие туры</strong> и <strong>горящие путевки</strong> с максимальными скидками для себя. Подумайте только, <strong>горящие туры в Египет</strong> или <strong>горящие путевки в Египет</strong> можно с легкостью заполучить почти с 50% процентной скидкой. Также вы сможете сравнить цены на <strong>горящие туры</strong> и <strong>горящие путевки</strong> с обычными ценами на <strong>туры в Египет</strong>, <strong>путевки в Египет</strong>, также Вы сможете найти для себя туры в Турцию, туры в ОАЭ и также в другие страны. <strong>Египет туры</strong> куда можно достать очень быстро и не выходя из дома или офиса - это отдушина, которая поможет Вам восстановить утраченные силы и энергию.
+ </p>
+ <p style="text-align: justify">
+ <strong>Горящие путевки Египет</strong> - это слова синонимы и не стоит думать, что поездка на отдых по горящим путевкам и горящим турам это феномен, который в обязательном порядке влечет за собой недостоверность предоставленной туроператором информации о курорте, плохое обслуживание или куда хуже простая денежная афера - все это лишь догадки и предрассудки людей, которые ни разу с этим не сталкивались. Процесс возникновения таких туров как <strong>горящие туры в Египет</strong> или <strong>горящие путевки в Египет</strong>, очень прост - компания, которая занимается организацией заранее приобретает некоторое количество мест в одном отеле или гостинице, договаривается о всех грядущих мероприятиях и экскурсиях, естественно на определенное количество людей. Как правило это следующие страны: <strong>Египет</strong>, Турция и ОАЭ, но могут быть и другие странны (за более детальной информацией обращайтесь к нашим менеджерам по <a href="/about" target="_blank">телефонам.</a> Но бывает так, что не всегда получается реализовать все билеты и у компании остается некое количество незанятых мест, но деньги за эти места уже заплачены, так вот именно эти места и называются - горящими турами, а также их называют еще горящими путевками. Компания старается продать их как можно быстрее и поэтому вынуждена делать на них скидки, иногда просто грандиозные, для того чтобы вернуть хоть какие-то деньги. <strong>Туры Египет</strong> а также <strong>путевки Египет</strong> - это два словосочетания, которые знает каждый турист, потому что многие начинают свою "карьеру туриста" с такой путевки как горящий тур в Египет. </p>
+ 
+<h2 style="text-align: center ">Горящие туры</h2><br>
+<p style="text-align: justify"> Если Вы копите средства на поездку в какую-нибудь страну, например, <strong>Египет</strong>, Турция, Эмираты или др., и у Вас есть желание сэкономить приличную сумму, то лучше чем горящие путевки, которые также называют горящие туры Вам не найти. Единственное, что следует помнить - не стоит покупать горящий тур в такие страны как Тайланд, Таити, Бора-Бора и пр., дело в том, что основной процент горящих путевок приходится на те страны, которые наиболее популярны, ведь компания должна хоть как-то прогнозировать ход событий. Несомненно, можно "поймать" горящий тур или горящую путевку в одну из дорогих стран, но этот шанс очень мал и возможно скидки будут не сильно велики. <strong>Египет горящие туры</strong> и <strong>Египет горящие путевки</strong> - вот что по настоящему приносит восторг, когда ты садишься на борт самолета и ждешь той минуты когда ты окунешься в тёплое Красное море и откроешь для себя новый красочный подводный МИР. </p>
+<p style="text-align: justify"> Другое дело дешевый тур в Египет или другие страны, эти государства принимают туристов круглый год, а демократичные цены позволяют отдыхать здесь людям разных социальных прослоек. Заполучить горящий тур  или путевку в одну из этих стран (<strong>Египет</strong>, Турция или Эмираты) да еще с небывалой скидкой более чем реально. Но это не значит, что ваш выбор этим ограничивается, ведь помимо самых популярных курортов существуют и другие, просто вероятность поймать удачу за хвост может быть немного ниже. </p>
+<p style="text-align: justify">
+ Особенно горящие туры и <strong>отдых Египет</strong> подойдут компаниям людей, которые не ограничены по времени и могут моментально вылететь в любую из предложенных стран (Египет, Турция или Эмираты), одна лишь мысль о том, что Вы не знаете в какой из стран будете отдыхать через 5 или 7 часов даст Вам колоссальный заряд энергии и море позитива - есть шанс оторваться по-полной. Египет путевки - это уникальная возможность получить массу положительных эмоций и несравненного загара, которому позавидуют все Ваши коллеги и друзья.</p>
+ <p style="text-align: justify">
+ Еще один из плюсов туров в Египет и путевок в Египет заключается в том, что не требуется тратить деньги и время на получение визы в посольстве, все необходимые документы Вы получите непосредственно в аэропорту. Египет тур, который Вам не может не понравиться, так как тур Египет - это сочетание хорошей цены, высокого качества обслуживания и экзотической сказки. Приобретайте горящие путевки  и горящие туры и начинайте наслаждаться отдыхом - приключения ждут Вас! У нас Вы сможете заказать <strong>туры в Египет из Киева</strong> и других городов Украины. </p>
+ <p style="text-align: justify">
+Египет отдых и дешевые туры в Египет, которые все привыкли называть горящие туры Египет или просто тур в Египет, стали синонимом словосочетания <strong>горящие туры Египет</strong> и это не зря, так как цены по настоящему удивляют! Купить тур в Египет или заказать тур в Египет Вы можете прямо сейчас по телефонам наших <a href="/about" target="_blank">профессиональных менеджеров</a>. Звоните прямо сейчас - прекрасный отдых ждет Вас! </p>
 
-Nulla congue massa massa, ut auctor nunc eleifend non. Cras dignissim leo ac lorem convallis bibendum. Morbi vel velit et libero varius condimentum nec id neque. Nulla facilisi. Phasellus laoreet risus eget velit vehicula, sed placerat ipsum malesuada. Aliquam tincidunt hendrerit diam, nec malesuada odio. Nullam imperdiet magna eget metus fermentum, nec fringilla felis elementum.</div><div class="showmore" onclick="showMore(this)"></div>
+</div><div class="showmore" onclick="showMore(this)"></div>
 		</content>
 		<?php include_once ("includes/footer.php");?>
 	</body>

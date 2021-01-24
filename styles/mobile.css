@@ -175,8 +175,11 @@ content {
   padding: 15px;
   height: auto;
   width: auto;
+  font-size: 80%;
 }
-
+content h1, content h2{
+	font-size: 90%;
+	}
 .collapsable {
   font-size: 1.3em;
   line-height: 23px;
@@ -187,7 +190,7 @@ content {
   transition: 0.5s ease-in;
 }
 .collapsable.less {
-  height: 92px;
+  height: 2px;
   overflow-y: hidden;
   transition: 0.5s ease-out;
 }
@@ -254,6 +257,9 @@ content {
   border: none;
   margin: 10px 0 20px 0;
   cursor: pointer;
+}
+.feedback_error {
+	background-color: #FFD4D4 !important;
 }
 
 footer {
@@ -341,3 +347,18 @@ footer * {
   }
 }
 */
+#avia{
+    width: 100%;
+    min-height: 800px;
+	height: 100%;
+    border: 0;
+}
+.content-wrapper{
+	width: 94% !important;
+}
+content_avia{
+  display: block;
+  padding: 0;
+  height: auto;
+  width: auto;
+}

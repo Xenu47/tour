@@ -1,0 +1,23 @@
+.message-tab{
+    margin-left: auto;
+    margin-right: auto;
+}
+.message-tab .bottom-zakaz{
+width: calc(100%)
+}
+.message-tab .kuda-vibor{
+width: calc(100%)
+}
+.message-tab .kuda{
+width: 155px;
+}
+.message-tab .hochu{
+width: calc(100%);
+height: calc(100%);
+text-align: left
+}
+#mc_embed_signup{
+background:#fff;
+ clear:left;
+ font:14px Helvetica,Arial,sans-serif
+ }
