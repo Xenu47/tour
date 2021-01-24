@@ -24,7 +24,11 @@ else if($delivery == ''){
 	$name = 'delivery';
 }
 else if($msg == ''){
+<<<<<<< HEAD
 	$error = 'Убедитесь, что вы ввели текст сообщения!';
+=======
+	$error = _mail_no_text;
+>>>>>>> parent of db37a8b... Merge branch 'master' of https://github.com/Xenu47/tour
 	$name = 'msg';
 }
 else if($nick == ''){
