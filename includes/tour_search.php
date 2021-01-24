@@ -3,7 +3,7 @@
 	var osTarget = '/tour'; /* URL для отправки формы */
 	var osContainer = null; /* Элемент DIV, в котором выводить результаты поиска */
 	var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
-	var osLang = 'ru'; /* язык интерфейса (ru|ua) */
+	var osLang = "<?php echo $_SESSION['lang']; ?>"; /* Язык интерфейса (ru|ua) */
 	var osTourTargetBlank = false; /* Открывать страницу тура в новом окне? */
 	var osOrderUrl = null; /* Вместо формы заказа, переходить на указанный url */
 </script>

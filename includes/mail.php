@@ -1,5 +1,10 @@
 
 <?php
+if(isset($_SESSION['lang'])){
+	include_once "../lang/lang_".$_SESSION['lang'].".php";
+}else{
+	include_once "../lang/lang_ua.php";
+}
 $url = "http://m.tourmix.com.ua/index.php"; //Ваша страница, где вы будете ставить форму обратной связи.
 $title = $_SERVER['HTTP_REFERER']; //адрес вашего сайта
 $subject = "Письмо со страницы $title"; //Тема отправляемых вам сообщений
@@ -24,15 +29,7 @@ else if($delivery == ''){
 	$name = 'delivery';
 }
 else if($msg == ''){
-<<<<<<< HEAD
-<<<<<<< HEAD
-	$error = 'Убедитесь, что вы ввели текст сообщения!';
-=======
 	$error = _mail_no_text;
->>>>>>> parent of db37a8b... Merge branch 'master' of https://github.com/Xenu47/tour
-=======
-	$error = 'Убедитесь, что вы ввели текст сообщения!';
->>>>>>> parent of 8e94777... fix lang
 	$name = 'msg';
 }
 else if($nick == ''){

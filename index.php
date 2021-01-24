@@ -1,8 +1,4 @@
 <?php
-<<<<<<< HEAD
-<<<<<<< HEAD
-  include_once('pages/main.php');
-=======
 	session_start();
 
 	// Set Language variable
@@ -20,8 +16,4 @@
 	}
 	include("lang/lang_".$_SESSION['lang'].".php");
 	include_once('pages/main.php');
->>>>>>> parent of db37a8b... Merge branch 'master' of https://github.com/Xenu47/tour
-=======
-  include_once('pages/main.php');
->>>>>>> parent of 8e94777... fix lang
 ?>

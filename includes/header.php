@@ -1,9 +1,9 @@
 <header>
 	<div id="header">
 		<div id="header-menu-button" onclick="openMenu()">
-		  <div class="bar1"></div>
-		  <div class="bar2"></div>
-		  <div class="bar3"></div>
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
 		</div>
 
 		<div id="header-logo">
@@ -11,10 +11,6 @@
 				<img src="../images/logo.gif">
 			</a>
 		</div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<div style="width:40px"></div>
-=======
 
 		<script>
 			function changeLang(){
@@ -31,9 +27,5 @@
 				<label for="ru"><img src="../images/flag_ru.png" height="40"></label>
 			</form>
 		</div>
->>>>>>> parent of db37a8b... Merge branch 'master' of https://github.com/Xenu47/tour
-=======
-		<div style="width:40px"></div>
->>>>>>> parent of 8e94777... fix lang
 	</div>
 </header>
