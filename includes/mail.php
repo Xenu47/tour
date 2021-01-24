@@ -29,7 +29,17 @@ else if($delivery == ''){
 	$name = 'delivery';
 }
 else if($msg == ''){
+//
+//
+//
+//
+//Тут писати змінні ось так:
 	$error = _mail_no_text;
+//
+//
+//
+//
+//
 	$name = 'msg';
 }
 else if($nick == ''){

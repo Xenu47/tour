@@ -13,9 +13,9 @@
 		</div>
 
 		<script>
-			function changeLang(){
-				document.getElementById('form_lang').submit();
-			}
+		function changeLang(){
+			document.getElementById('form_lang').submit();
+		}
 		</script>
 		<div>
 			<form method='get' action='' id='form_lang' onchange='changeLang();' >

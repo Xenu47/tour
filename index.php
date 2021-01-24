@@ -11,9 +11,11 @@
 	}
 
 	// Include Language file
-	if(!isset($_SESSION['lang'])){
-		$_SESSION['lang'] = 'ua'; // 'ua|ru'
+	if(isset($_SESSION['lang'])){
+		include "lang/lang_".$_SESSION['lang'].".php";
+	}else{
+		$_SESSION['lang'] = 'ua';
+		include "lang/lang_ua.php";
 	}
-	include("lang/lang_".$_SESSION['lang'].".php");
 	include_once('pages/main.php');
 ?>
