@@ -12,6 +12,7 @@
 			</a>
 		</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<div style="width:40px"></div>
 =======
 
@@ -31,5 +32,8 @@
 			</form>
 		</div>
 >>>>>>> parent of db37a8b... Merge branch 'master' of https://github.com/Xenu47/tour
+=======
+		<div style="width:40px"></div>
+>>>>>>> parent of 8e94777... fix lang
 	</div>
 </header>
