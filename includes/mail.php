@@ -1,5 +1,10 @@
 
 <?php
+if(isset($_SESSION['lang'])){
+	include_once "../lang/lang_".$_SESSION['lang'].".php";
+}else{
+	include_once "../lang/lang_ua.php";
+}
 $url = "http://m.tourmix.com.ua/index.php"; //Ваша страница, где вы будете ставить форму обратной связи.
 $title = $_SERVER['HTTP_REFERER']; //адрес вашего сайта
 $subject = "Письмо со страницы $title"; //Тема отправляемых вам сообщений
@@ -24,7 +29,17 @@ else if($delivery == ''){
 	$name = 'delivery';
 }
 else if($msg == ''){
-	$error = 'Убедитесь, что вы ввели текст сообщения!';
+//
+//
+//
+//
+//Тут писати змінні ось так:
+	$error = _mail_no_text;
+//
+//
+//
+//
+//
 	$name = 'msg';
 }
 else if($nick == ''){
