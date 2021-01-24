@@ -3,7 +3,7 @@
 	var osTarget = "/sightseeing"; /* URL для отправки формы */
 	var osContainer = null; /* Элемент DIV, в котором выводить результаты поиска */
 	var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
-	var osLang = "<?php echo $_SESSION['lang']; ?>"; /* Язык интерфейса (ru|ua) */
+	var osLang = 'ru'; /* Язык интерфейса (ru|ua) */
 	var enableMediumForm = true; /* Стили для промежуточной формы при ширине родительского элемента от 600 до 950px */
 </script>
 <link rel="Stylesheet" href="https://export.otpusk.com/os/excursion/form.css" type="text/css" />
@@ -30,7 +30,7 @@
 
 	<a href="https://plus.google.com/109467271190413362405?rel=author=nofollow" rel="nofollow">Google</a>
 
-<del class="hide"><![CDATA[</noindex>]]></del>-->
+<del class="hide"><![CDATA[</noindex>]]></del>  
 
 <!--<script>if(!window.jQuery){   var script = document.createElement("script");   script.type = "text/javascript";   script.src = "http://code.jquery.com/jquery-latest.min.js";   document.getElementsByTagName("head")[0].appendChild(script);}</script>
 </span>-->

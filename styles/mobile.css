@@ -23,19 +23,6 @@ header {
   background-image: url(../images/head.jpg);
   background-size: cover;
 }
-#header form {
-  padding: 10px;
-}
-#header label {
-  cursor: pointer;
-  filter: grayscale(100%);
-}
-#header label:hover {
-  filter: grayscale(0);
-}
-#header input[type="radio"]:checked + label {
-  filter: grayscale(0);
-}
 #header-logo {
   font-size: 3em;
   line-height: 50px;
@@ -74,17 +61,6 @@ header {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-9px, -9px);
-}
-label {
-  cursor: pointer;
-  filter: grayscale(100%);
-}
-
-label:hover {
-  filter: grayscale(0);
-}
-input[type="radio"]:checked + label {
-  filter: grayscale(0);
 }
 
 menu {
