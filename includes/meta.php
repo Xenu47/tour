@@ -16,3 +16,4 @@
 
 <link rel="icon" type="image/x-icon" href="/images/Tourmix2.ico">
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
