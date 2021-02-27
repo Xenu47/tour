@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 if(isset($_SESSION['lang'])){
 	include_once "../lang/lang_".$_SESSION['lang'].".php";
 }else{
@@ -29,7 +30,7 @@ else if($delivery == ''){
 	$name = 'delivery';
 }
 else if($msg == ''){
-	$error = _mail_no_text;
+	$error = 'Убедитесь, что вы ввели текст сообщения!';
 	$name = 'msg';
 }
 else if($nick == ''){

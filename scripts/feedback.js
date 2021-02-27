@@ -7,7 +7,9 @@ Function.prototype.extend = function(fn) {
 };
 
 window.onload = window.onload.extend(function(){
-	document.querySelector('#feedback_form').addEventListener('submit',feedback);
+	if(document.querySelector('#feedback_form')){
+		document.querySelector('#feedback_form').addEventListener('submit',feedback);
+	}
 })
 
 var current_error = ''

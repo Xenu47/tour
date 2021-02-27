@@ -9,4 +9,6 @@ Redirect 301 /a_viber viber://chat?number=+380638757510
 Redirect 301 /s_viber viber://chat?number=+380675075833
 Redirect 301 /t_viber viber://chat?number=+380677550007
 
-Options +Indexes
+Options -Indexes
+ErrorDocument 403 /
+ErrorDocument 404 /

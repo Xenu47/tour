@@ -1,4 +1,6 @@
 <!DOCTYPE html5>
+
+<?php include_once ("includes/lang.php");?>
 <html>
 	<head>
 		<title>Tourmix</title>

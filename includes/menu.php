@@ -18,7 +18,7 @@
 	<div class="inline-menu" id="about-us">
 		<a href="/about" class="link">Контакты и менеджеры</a>
 		<!--<a href="" class="link">Отзывы туристов</a>-->
-		<a href="/massage" class="link">Форма обратной связи</a>
+		<a href="..pages/message" class="link">Форма обратной связи</a>
 		<!--<a href="" class="link">Cертификаты</a>-->
 	</div>
 	<div id="bonus_height"></div>

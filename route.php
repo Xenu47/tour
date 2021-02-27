@@ -1,23 +1,27 @@
 <?php
-  $url = explode('/', $_SERVER['REQUEST_URI']);
+  session_start();
+  $url = explode('?', explode('/', $_SERVER['REQUEST_URI'])[1]);
 
-  if (strtolower($url[1]) == 'main'){
+  if (strtolower($url[0]) == ''){
     require 'pages/main.php';
   }
-  elseif (strtolower($url[1]) == 'tour') {
+  elseif (strtolower($url[0]) == 'main'){
+    require 'pages/main.php';
+  }
+  elseif (strtolower($url[0]) == 'tour') {
     require 'pages/tour.php';
   }
-  elseif (strtolower($url[1]) == 'sightseeing') {
+  elseif (strtolower($url[0]) == 'sightseeing') {
     require 'pages/sightseeing.php';
   }
-  elseif (strtolower($url[1]) == 'avia') {
+  elseif (strtolower($url[0]) == 'avia') {
     require 'pages/avia.php';
   }
-  elseif (strtolower($url[1]) == 'about') {
+  elseif (strtolower($url[0]) == 'about') {
     require 'pages/about.php';
   }
-  elseif (strtolower($url[1]) == 'massage') {
-    require 'pages/massage.php';
+  elseif (strtolower($url[0]) == 'message') {
+    require 'pages/message.php';
   }
   else {
     require 'pages/main.php';
