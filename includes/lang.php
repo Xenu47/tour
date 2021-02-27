@@ -43,10 +43,10 @@
 	echo '<script type="text/javascript">alert("Sess: '.$_SESSION['lang'].'; subd: '.$subdom.'; post: '.$_POST['lang'].'")</script>';
 	if($_SESSION['lang'] == 'ua' && $subdom == 'ru' && isset($_POST['lang']) && !empty($_POST['lang'])){
 		$subdom = '';
-		header('Location: http://localhost');//.$dom.'/'.explode('/', $_SERVER['REQUEST_URI'])[1]);
+		header('Location: http://'.$dom.'/'.explode('/', $_SERVER['REQUEST_URI'])[1]);
 	}
 	if($_SESSION['lang'] == 'ru' && $subdom != 'ru' && isset($_POST['lang']) && !empty($_POST['lang'])){
 		$subdom = 'ru';
-		header('Location: http://ru.localhost');//.$subdom.'.'.$dom.'/'.explode('/', $_SERVER['REQUEST_URI'])[1]);
+		header('Location: http://'.$subdom.'.'.$dom.'/'.explode('/', $_SERVER['REQUEST_URI'])[1]);
 	}
 ?>
